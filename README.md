@@ -1,73 +1,109 @@
-# React + TypeScript + Vite
+<div dir="rtl">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 📄 Doc Builder
 
-Currently, two official plugins are available:
+ابزاری ساده و کارآمد برای ساخت مستندات فنی — با پشتیبانی از بلاک‌های توضیحات و کد
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+[🚀 مشاهده پروژه](https://aria-hosseini.github.io/Doc-Builder/)
 
-## React Compiler
+</div>
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+<div dir="rtl">
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ✨ امکانات
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- ➕ افزودن و حذف بلاک‌های مستند
+- 📝 نوشتن توضیحات برای هر بلاک
+- 💻 پشتیبانی از بلاک کد با هایلایت زبان‌های مختلف
+- 🌐 پشتیبانی از زبان‌های برنامه‌نویسی: JavaScript، TypeScript، JSX، Python، CSS
+- 🌙 رابط کاربری تاریک و مدرن
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🛠 تکنولوژی‌ها
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+| ابزار | نسخه |
+|-------|-------|
+| React | 19 |
+| TypeScript | 5 |
+| Vite | 6 |
+| Tailwind CSS | 4 |
+| Zustand | — |
+
+## 🚀 اجرای محلی
+
+```bash
+# کلون کردن ریپو
+git clone https://github.com/Aria-Hosseini/Doc-Builder.git
+
+# ورود به پوشه
+cd Doc-Builder
+
+# نصب پکیج‌ها
+npm install
+
+# اجرا در حالت توسعه
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📦 بیلد
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run build
 ```
+
+</div>
+
+---
+
+# 📄 Doc Builder
+
+A simple and efficient tool for building technical documentation — with support for description and code blocks.
+
+[🚀 Live Demo](https://aria-hosseini.github.io/Doc-Builder/)
+
+## ✨ Features
+
+- ➕ Add and remove document blocks
+- 📝 Write descriptions for each block
+- 💻 Code blocks with multi-language support
+- 🌐 Supported languages: JavaScript, TypeScript, JSX, Python, CSS
+- 🌙 Dark and modern UI
+
+## 🛠 Tech Stack
+
+| Tool | Version |
+|------|---------|
+| React | 19 |
+| TypeScript | 5 |
+| Vite | 6 |
+| Tailwind CSS | 4 |
+| Zustand | — |
+
+## 🚀 Getting Started
+
+```bash
+# Clone the repository
+git clone https://github.com/Aria-Hosseini/Doc-Builder.git
+
+# Navigate to project
+cd Doc-Builder
+
+# Install dependencies
+npm install
+
+# Run in development mode
+npm run dev
+```
+
+## 📦 Build
+
+```bash
+npm run build
+```
+
+---
+
+<div align="center">
+Made with ❤️ by <a href="https://github.com/Aria-Hosseini">Aria Hosseini</a>
+</div>
